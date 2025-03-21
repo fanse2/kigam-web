@@ -110,10 +110,19 @@ h1{
 header {
     position: relative;
     height: 600px; /* 높이 설정 */
-    
     background-image: url('img/door.jpg'); 
     background-size: cover; 
     background-position: center;
+    animation: backgroundZoom 5s infinite alternate; /* 애니메이션 추가 */
+}
+
+@keyframes backgroundZoom {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 110%;
+    }
 }
 
 header .container {
