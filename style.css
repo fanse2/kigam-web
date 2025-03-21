@@ -157,6 +157,14 @@ header::before {
     display: inline-block; /* 인라인 블록으로 설정 */
 }
 
+.nav-item a {
+    transition: transform 0.3s ease;
+}
+
+.nav-item a:active {
+    transform: scale(1.2);
+}
+
 .about-item {
     display: flex;
     align-items: center;
